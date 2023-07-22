@@ -1,0 +1,12 @@
+Options -Indexes
+
+# Allow access to specific file types
+<FilesMatch "\.(jpg|jpeg|png)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Ignore query parameters
+RewriteEngine On
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^ - [F]
