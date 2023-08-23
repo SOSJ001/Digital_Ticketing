@@ -5,6 +5,10 @@ include_once 'conn.php';
 if (isset($_POST['qrCodeMessage'])) {
 
     $qrCode = mysqli_real_escape_string($con, $_POST['qrCodeMessage']);
+    $queryString = parse_url($qrCode, PHP_URL_QUERY);// Get the query string from the URL
+    parse_str($queryString, $variables); // Parse the query string and store variables in an array
+    // Access the variables
+    $qrCode = $variables['name'];
 
     // hashing the password 
     // $Pass = password_hash(mysqli_real_escape_string($con, $_POST['Pass']), PASSWORD_ARGON2I);

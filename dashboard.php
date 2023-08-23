@@ -159,7 +159,7 @@ if (empty($_SESSION['user']['name'])) {
                     if ($count_seat < 1) {
                         // if no seats available for the event
                         ?>
-                        <div title="Add Seat To Sell Ticket"
+                        <div title="Add Seat To Share Invite"
                             class="row rounded row-col-2 row-col-md-1 row-col-sm-1 has shadow bg-dark border border-light text-light p-3 my-3">
                             <!-- sharing tickets row -->
                             <div
@@ -173,7 +173,7 @@ if (empty($_SESSION['user']['name'])) {
                                             class="share1 link-dark text-none btn btn-light text-dark m-3"
                                             data-bs-target="#ShareEventModal" data-bs-toggle="modal" role="button"><i
                                                 class="fa-solid fa-share-from-square fa-3x"></i>
-                                            <br><span class="fs-6 fw-bold">Sell Ticket</span>
+                                            <br><span class="fs-6 fw-bold">Share Invite</span>
                                         </button>
                                     </div>
                                     <div class="m-3">
@@ -251,13 +251,13 @@ if (empty($_SESSION['user']['name'])) {
                                 <div class=" d-flex align-items-center">
                                     <div class="icon rounded-circle">
                                         <!-- sell button -->
-                                        <button title="Sell Ticket" data-id="<?php echo $rowEvent["id"]; ?>"
+                                        <button title="Share Invite" data-id="<?php echo $rowEvent["id"]; ?>"
                                             data-name="EVENT: <?php echo $rowEvent["Name"]; ?>"
                                             data-cmd="<?php echo $row_seat["id"]; ?>"
                                             class="share1 link-dark text-none btn btn-light text-dark m-3"
                                             data-bs-target="#ShareEventModal" data-bs-toggle="modal" role="button"><i
                                                 class="fa-solid fa-share-from-square fa-3x"></i>
-                                            <br><span class="fs-6 fw-bold">Sell Ticket</span>
+                                            <br><span class="fs-6 fw-bold">Share Invite</span>
                                         </button>
                                     </div>
                                     <div class="m-3">

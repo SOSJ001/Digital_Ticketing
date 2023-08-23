@@ -64,8 +64,9 @@
                         </li>
                     </ul>
                 </div>
+                <!-- topnavbar end -->
             </div>
-            <!-- topnavbar end -->
+            
         </nav>
 
         <!-- navigation -->
@@ -75,13 +76,6 @@
         <!-- ==========Banner-Section========== -->
         <div class="banner fw-semibold">
             <div class="video-container">
-                <!-- <video muted autoplay loop playsinline class="video"> -->
-                <!-- <source src="img/concert-loop.mp4" type="video/mp4"> -->
-                <!-- <video muted autoplay loop playsinline> -->
-                <!-- <source src="img/concert-loop.mp4" type="video/mp4">
-                <source src="img/concert-loop.webm" type="video/webm"> -->
-                <!-- <img src="https://source.unsplash.com/random/800x600/?darkMode" alt="banner video"> -->
-                <!-- </video> -->
                 <img src="img/explosion.png" alt="Fallback Image" class="fallback-image">
             </div>
             <div class="content">

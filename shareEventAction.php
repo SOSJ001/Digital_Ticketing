@@ -147,14 +147,16 @@ if ($result_select_image = mysqli_query($con, $select_image)) {
         // ###############
 
 
-        $src = imagescale($src1, 348, 348, IMG_NEAREST_NEIGHBOUR); //reseizing the  qr image
+        $src = imagescale($src1, 168, 168, IMG_NEAREST_NEIGHBOUR); //reseizing the  qr image
+        
         // creating basic colours
         // $white = imagecolorallocate($img, 255, 255, 255);
         $black = imagecolorallocate($src, 0, 0, 0);
         // giving the rectangle a  colour
         //imagefilledrectangle($img, 0, 0, 500, 300, $white);
+
         // putting the text into the image###########
-        imagestring($src, 5, 50, 0, $CustomerName, $black);
+        imagestring($src, 2, 10, 0, $CustomerName, $black);
         $str_img = "str_image/" . $CustomerName . uniqid() . ".png";
         imagepng($src, $str_img); //saving  the string on the qr
         // ##############################
